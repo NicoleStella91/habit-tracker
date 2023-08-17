@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.divider {
+    width: 100%;
+    height: 20px;
+    background-color: #d48a57;
+}
+
+.logo {
+    margin: 30px auto;
+    width: 200px;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+label {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+input[type=week] {
+    font-family: 'Cabin Condensed', sans-serif;
+    text-align: center;
+    font-size: medium;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=week]:hover {
+    box-shadow: 2px 2px 2px #000000;
+}
+
+input[type=text] {
+    font-family: 'Cabin Condensed', sans-serif;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    border-radius: 8px;
+    max-width: fit-content;
+    cursor: pointer;
+    border: 2px solid black;
+    outline: none;
+}
+
+input[type=text]:hover {
+    box-shadow: 2px 2px 2px #000000;
+}
+
+input[type=text]:focus {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+    accent-color: green;
+}
+
+input[type=checkbox]:hover {
+    box-shadow: 1px 1px 10px #000000;
+}
+
+button {
+    font-family: 'Righteous', cursive; 
+    margin: 20px auto;
+}
+
+.primary-btn {
+    font-size: medium;
+    border-radius: 8px;
+    background-color: #E9B490;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+}
+
+.primary-btn:hover {
+    box-shadow: 2px 2px 2px #000000;
+}
+
+table {
+    text-align: center;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+tr {
+    max-width: 100vw;
+}
+
+th {
+    max-width: fit-content;
+    height: 30px;
+    font-size: medium;
+    background-color: #e9b490d2;
+    padding: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.primary-th {
+    background-color: rgba(114, 17, 17, 0.288);
+}
+
+td {
+    height: 40px;
+    font-size: medium;
+    max-width: fit-content;
+    padding: 2px;
+}
+
+.habit-text {
+    text-transform: capitalize;
+    background-color: rgba(114, 17, 17, 0.116);
+}
+
+i {
+    color: #d48a57;
+    cursor: pointer;
+}
+
+i:hover {
+    color: rgb(121, 7, 7);
+}
+
+#device {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #device {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #device > p {
+        text-align: center;
+        margin: 5% auto;
+        width: 70%;
+    }
+    
+    #device > img {
+        margin: auto;
+    }
+    
+
+    #tracker {
+        display: none;
+    }
+
+    .user-input {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .logo {
+        width: 300px;
+    }
+
+    th {
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .primary-btn {
+        width: 200px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+}

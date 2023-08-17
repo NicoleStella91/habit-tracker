@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/style.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/1c7f55f4c1.js" crossorigin="anonymous"></script>
+    <!--JS PDF Library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+    <title>My Habit Tracker</title>
+</head>
+<body>
+    <header role="heading">
+        <div class="divider"></div>
+        <a href="/index.html"><img src="/images/my-habit-tracker-low-resolution-logo-color-on-transparent-background.png" alt="My Habit Tracker Logo" title="My Habit Tracker Logo" class="logo"></a>
+    </header>
+    <main>
+
+        <!--Collapsible "How To Use"-->
+
+        <div class="wrapper">
+            <div id="device">
+                <p>For a better user experience, please rotate your device.</p>
+                <img src="/images/screen_rotation_alt_FILL0_wght400_GRAD0_opsz48.png" alt="">
+            </div>
+
+            <!--Habit Input-->
+            <div class="user-input">
+                <label for="habit">Your Habit:</label>
+                <input type="text" name="habit" id="habit">
+            </div>
+            <button type="submit" id="addHabit" class="primary-btn" onclick="addHabit()">Add Habit</button>
+
+            <!--Tracker-->
+            <table id="tracker" class="hidden">
+                <tr>
+                    <th class="primary-th" id="habit-cell">Habits</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </table>
+            <button class="primary-btn" onclick="clearAll()">Clear all</button>
+
+        </div>
+    </main>
+    <footer>
+        <!--Terms, Made by-->
+    </footer>
+    
+    <!--Custom JS-->
+    <script src="/script.js"></script>
+</body>
+</html>
